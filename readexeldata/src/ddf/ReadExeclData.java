@@ -18,6 +18,10 @@ public class ReadExeclData {
       String fname = sheet.getRow(0).getCell(0).getStringCellValue();
       System.out.println(fname);
       System.out.println("pass");
+      
+   // 1 denotes to Second row and 0 denotes first cell of the excel sheet.
+   		Number num = sheet.getRow(1).getCell(0).getNumericCellValue();
+   		System.out.println("Number Fecth from Excel:- "+num);
       file.close();
 	}
 	
